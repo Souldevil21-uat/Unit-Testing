@@ -73,10 +73,5 @@ namespace Unit_Testing
 
             MessageBox.Show("If you see this without a debugger message, asserts may be disabled.");
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -135,7 +135,6 @@
             Controls.Add(lblValue1);
             Name = "Form1";
             Text = "Number Off";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
