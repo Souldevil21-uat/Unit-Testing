@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
@@ -9,76 +11,72 @@ namespace Unit_Testing
         public Form1()
         {
             InitializeComponent();
-
-            // Run internal tests when the program starts
-            RunAssertTests();
         }
 
-        /*
-         Program: Boolean Function Assertion Tester
-         Purpose: Demonstrates unit testing using Debug.Assert() on two
-                  Boolean-returning functions that use textbox input.
-         Author: Student
-         */
-
-        // Function 1
-        // Checks if the first number entered is greater than the second number
-        // Returns true if value1 > value2, otherwise false
+        // Function 1:
+        // Returns true if the first number is greater than the second number
         private bool IsFirstNumberGreater(int value1, int value2)
         {
             return value1 > value2;
         }
 
-        // Function 2
-        // Checks if the first number falls within the range 10–50
-        // Returns true if inside the range, otherwise false
+        // Function 2:
+        // Returns true if the first number is between 10 and 50 inclusive
         private bool IsNumberInRange(int value)
         {
             return value >= 10 && value <= 50;
         }
 
-        // Button click event for greater comparison
+        // Checks function 1 using textbox values
         private void btnCheckGreater_Click(object sender, EventArgs e)
         {
-            int num1, num2;
-
-            // Prevent program crash from invalid input
-            if (int.TryParse(txtValue1.Text, out num1) && int.TryParse(txtValue2.Text, out num2))
+            if (int.TryParse(txtValue1.Text, out int num1) &&
+                int.TryParse(txtValue2.Text, out int num2))
             {
                 bool result = IsFirstNumberGreater(num1, num2);
-                lblResult.Text = "Result: " + result.ToString();
+                lblResult.Text = "Greater Result: " + result;
             }
             else
             {
-                MessageBox.Show("Please enter valid numbers.");
+                MessageBox.Show("Please enter valid whole numbers in both textboxes.");
             }
         }
 
-        // Button click event for range check
+        // Checks function 2 using textbox 1
         private void btnCheckRange_Click(object sender, EventArgs e)
         {
-            int num;
-
-            if (int.TryParse(txtValue1.Text, out num))
+            if (int.TryParse(txtValue1.Text, out int num))
             {
                 bool result = IsNumberInRange(num);
-                lblResult.Text = "Result: " + result.ToString();
+                lblResult.Text = "Range Result: " + result;
             }
             else
             {
-                MessageBox.Show("Please enter a valid number.");
+                MessageBox.Show("Please enter a valid whole number in the first textbox.");
             }
         }
 
-        // Assert testing method
-        // Verifies the Boolean functions behave correctly
-        private void RunAssertTests()
+        // This button shows asserts PASSING
+        private void btnRunPassingAsserts_Click(object sender, EventArgs e)
         {
-            Debug.Assert(IsFirstNumberGreater(10, 5) == true, "Test Failed: 10 should be greater than 5");
-            Debug.Assert(IsFirstNumberGreater(3, 8) == false, "Test Failed: 3 should not be greater than 8");
+            Debug.Assert(IsFirstNumberGreater(10, 5) == true, "Assert failed: 10 should be greater than 5");
+            Debug.Assert(IsNumberInRange(25) == true, "Assert failed: 25 should be in range");
 
-            Debug.Assert(IsNumberInRange(25) == true, "Test Failed: 25 should be in range");
-            Debug.Assert(IsNumberInRange(5) == false, "Test Failed: 5 should be outside range");
+            MessageBox.Show("Passing asserts completed. No assertion errors occurred.");
+        }
+
+        // This button shows asserts FAILING
+        private void btnRunFailingAsserts_Click(object sender, EventArgs e)
+        {
+            Debug.Assert(IsFirstNumberGreater(2, 8) == true, "Assert failed: 2 is not greater than 8");
+            Debug.Assert(IsNumberInRange(5) == true, "Assert failed: 5 is not in range 10 to 50");
+
+            MessageBox.Show("If you see this without a debugger message, asserts may be disabled.");
+        }
+
+        private void btnCheckRange_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

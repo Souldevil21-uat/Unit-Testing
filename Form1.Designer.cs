@@ -35,6 +35,8 @@
             btnCheckGreater = new Button();
             btnCheckRange = new Button();
             lblResult = new Label();
+            btnRunPassingAsserts = new Button();
+            btnRunFailingAsserts = new Button();
             SuspendLayout();
             // 
             // lblValue1
@@ -71,7 +73,7 @@
             // 
             // btnCheckGreater
             // 
-            btnCheckGreater.Location = new Point(173, 252);
+            btnCheckGreater.Location = new Point(179, 234);
             btnCheckGreater.Name = "btnCheckGreater";
             btnCheckGreater.Size = new Size(99, 23);
             btnCheckGreater.TabIndex = 4;
@@ -80,12 +82,13 @@
             // 
             // btnCheckRange
             // 
-            btnCheckRange.Location = new Point(404, 252);
+            btnCheckRange.Location = new Point(404, 234);
             btnCheckRange.Name = "btnCheckRange";
             btnCheckRange.Size = new Size(99, 23);
             btnCheckRange.TabIndex = 5;
             btnCheckRange.Text = "Check Range";
             btnCheckRange.UseVisualStyleBackColor = true;
+            btnCheckRange.Click += btnCheckRange_Click_1;
             // 
             // lblResult
             // 
@@ -95,11 +98,31 @@
             lblResult.Size = new Size(0, 15);
             lblResult.TabIndex = 6;
             // 
+            // btnRunPassingAsserts
+            // 
+            btnRunPassingAsserts.Location = new Point(172, 263);
+            btnRunPassingAsserts.Name = "btnRunPassingAsserts";
+            btnRunPassingAsserts.Size = new Size(122, 23);
+            btnRunPassingAsserts.TabIndex = 7;
+            btnRunPassingAsserts.Text = "Run Passing Asserts";
+            btnRunPassingAsserts.UseVisualStyleBackColor = true;
+            // 
+            // btnRunFailingAsserts
+            // 
+            btnRunFailingAsserts.Location = new Point(394, 263);
+            btnRunFailingAsserts.Name = "btnRunFailingAsserts";
+            btnRunFailingAsserts.Size = new Size(122, 23);
+            btnRunFailingAsserts.TabIndex = 8;
+            btnRunFailingAsserts.Text = "Run Failing Asserts";
+            btnRunFailingAsserts.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnRunFailingAsserts);
+            Controls.Add(btnRunPassingAsserts);
             Controls.Add(lblResult);
             Controls.Add(btnCheckRange);
             Controls.Add(btnCheckGreater);
@@ -122,5 +145,7 @@
         private Button btnCheckGreater;
         private Button btnCheckRange;
         private Label lblResult;
+        private Button btnRunPassingAsserts;
+        private Button btnRunFailingAsserts;
     }
 }
