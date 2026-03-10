@@ -74,7 +74,7 @@ namespace Unit_Testing
             MessageBox.Show("If you see this without a debugger message, asserts may be disabled.");
         }
 
-        private void btnCheckRange_Click_1(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

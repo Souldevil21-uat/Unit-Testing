@@ -79,6 +79,7 @@
             btnCheckGreater.TabIndex = 4;
             btnCheckGreater.Text = "Check Greater";
             btnCheckGreater.UseVisualStyleBackColor = true;
+            btnCheckGreater.Click += btnCheckGreater_Click;
             // 
             // btnCheckRange
             // 
@@ -88,7 +89,7 @@
             btnCheckRange.TabIndex = 5;
             btnCheckRange.Text = "Check Range";
             btnCheckRange.UseVisualStyleBackColor = true;
-            btnCheckRange.Click += btnCheckRange_Click_1;
+            btnCheckRange.Click += btnCheckRange_Click;
             // 
             // lblResult
             // 
@@ -106,6 +107,7 @@
             btnRunPassingAsserts.TabIndex = 7;
             btnRunPassingAsserts.Text = "Run Passing Asserts";
             btnRunPassingAsserts.UseVisualStyleBackColor = true;
+            btnRunPassingAsserts.Click += btnRunPassingAsserts_Click;
             // 
             // btnRunFailingAsserts
             // 
@@ -115,6 +117,7 @@
             btnRunFailingAsserts.TabIndex = 8;
             btnRunFailingAsserts.Text = "Run Failing Asserts";
             btnRunFailingAsserts.UseVisualStyleBackColor = true;
+            btnRunFailingAsserts.Click += btnRunFailingAsserts_Click;
             // 
             // Form1
             // 
@@ -132,6 +135,7 @@
             Controls.Add(lblValue1);
             Name = "Form1";
             Text = "Number Off";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

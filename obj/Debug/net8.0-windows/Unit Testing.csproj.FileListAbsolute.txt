@@ -1,0 +1,17 @@
+D:\GitHib Repositories\Unit Testing\bin\Debug\net8.0-windows\Unit Testing.exe
+D:\GitHib Repositories\Unit Testing\bin\Debug\net8.0-windows\Unit Testing.deps.json
+D:\GitHib Repositories\Unit Testing\bin\Debug\net8.0-windows\Unit Testing.runtimeconfig.json
+D:\GitHib Repositories\Unit Testing\bin\Debug\net8.0-windows\Unit Testing.dll
+D:\GitHib Repositories\Unit Testing\bin\Debug\net8.0-windows\Unit Testing.pdb
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit_Testing.Form1.resources
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.csproj.GenerateResource.cache
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.AssemblyInfoInputs.cache
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.AssemblyInfo.cs
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.csproj.CoreCompileInputs.cache
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.sourcelink.json
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.dll
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\refint\Unit Testing.dll
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.pdb
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\Unit Testing.genruntimeconfig.cache
+D:\GitHib Repositories\Unit Testing\obj\Debug\net8.0-windows\ref\Unit Testing.dll
